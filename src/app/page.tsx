@@ -25,7 +25,6 @@ export default function Home() {
                 gjør oss klare! 🐝✨
             </p>
 
-            {/* Knapper med moderne styling */}
             <div className='flex flex-col sm:flex-row gap-6 w-full max-w-sm sm:max-w-none justify-center items-center'>
                 <a
                     href='https://www.instagram.com/strawberrydesign.no/'
@@ -48,7 +47,6 @@ export default function Home() {
                 </a>
             </div>
 
-            {/* Footer */}
             <footer className='mt-24 text-bee-brown/40 text-sm font-medium tracking-wide flex flex-col items-center gap-4'>
                 <div className='flex items-center justify-center gap-2'>
                     <span>Følg med</span>

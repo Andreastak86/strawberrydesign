@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Quicksand } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const quicksand = Quicksand({
@@ -22,7 +24,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang='no' className={`${inter.variable} ${quicksand.variable}`}>
-            <body>{children}</body>
+            <body
+                className={`${inter.variable} ${quicksand.variable} flex flex-col min-h-svh`}
+            >
+                <Navbar />
+                <main className='grow'>{children}</main>
+                <Footer />
+            </body>
         </html>
     );
 }
